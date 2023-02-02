@@ -2,6 +2,7 @@
   <div class="container">
     <div>
       <NuxtLogo />
+      <span class="text">测试</span>
     </div>
   </div>
 </template>
