@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <NuxtLogo />
-      <span class="text">测试</span>
+      <span class="test">测试</span>
     </div>
   </div>
 </template>
@@ -13,7 +13,9 @@ export default {
 }
 </script>
 
-<style>
+
+<style lang="scss">
+@import '../assets/css/index.scss';
 .container {
   margin: 0 auto;
   min-height: 100vh;
