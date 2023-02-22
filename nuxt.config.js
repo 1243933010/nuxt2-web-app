@@ -1,4 +1,7 @@
 export default {
+  router:{
+    base:`${process.env.LOCALHOSTNAME?process.env.LOCALHOSTNAME:'/nuxt2Generate'}`
+  },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'nuxtProject',
@@ -12,7 +15,8 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {rel:'stylesheet',href:'https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css'}
     ]
   },
 
@@ -44,5 +48,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    dir:'nuxt2Build'
+  },
+  generate:{
+    dir:'nuxt2Generate'
   }
 }
